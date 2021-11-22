@@ -767,7 +767,7 @@ p {
 
   .content-contact-text:after {
     display:  block;
-    content: '\2199';
+    content: '\2199\00FE0E';
     font-family: 'Helvetica Neue';
     color: #fff;
     font-size: 10vw;
