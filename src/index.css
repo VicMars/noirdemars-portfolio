@@ -767,8 +767,8 @@ p {
 
   .content-contact-text:after {
     display:  block;
-    content: '↙';
-    font-family: 'Arial';
+    content: '\2199';
+    font-family: 'Helvetica Neue';
     color: #fff;
     font-size: 10vw;
     padding-bottom: 1em;
