@@ -598,7 +598,7 @@ p {
 
 /* Responsive */
 
-@media (max-width: 48em) {
+@media (max-width: 60em) {
 
   #main-content, #container-about, #container-web,
   #container-textile, #container-contact {
@@ -783,6 +783,35 @@ p {
    .contact-links {
     padding:  2em 0 5em 0;
    }
+
+}
+
+
+@media (max-width:27em) {
+
+  .main-header {
+    height: auto;
+    text-align:left;
+    background-color: #000;
+  }
+
+  #secondary-navigation.right {
+    display: none;
+  }
+
+  #main-navigation {
+    width: 100%;
+    text-align:right;
+  }
+
+  #main-navigation ul li {
+    padding:0 0.5em 0.5em 0.5em;
+  }
+
+  #main-navigation ul li:last-child{
+    display: block;
+    color: red
+  }
 
 }
 
