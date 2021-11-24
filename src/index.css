@@ -3,7 +3,7 @@ body {
   font-family: "Spartan", "Playfair Display", "Helvetica Neue", "FontAwesome", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 17px;
   color:  #fff;
   background-color:  #000;
   background-image:  url('./noirdemars_background.jpg');
@@ -90,7 +90,6 @@ p {
   display:  flex;
   justify-content:  space-between;
   align-content: center;
-  align-items:  center;
   max-width:  100%;
   height:  50px;
   padding:  0 2em;
@@ -115,8 +114,15 @@ p {
   text-decoration:  none;
 }
 
-#main-navigation ul li, #secondary-navigation ul li {
+#main-navigation {
+  width: 100%;
+  text-align: right;
+  padding:  0 1em;
+}
+
+#main-navigation ul li {
   display: inline-block;
+  text-align: right;
   padding:  0 1em;
 }
 
@@ -177,21 +183,81 @@ p {
 #main-content {
   display: block;
   position: relative;
-  top: 50px;
+  top: 30px;
   bottom: 0;
   height: 100% !important;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-content: center;
-  align-items: flex-end;
-  height: 80vh;
-  max-width: 100%;
-  max-height:  100%;
-  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+  /*background-color: #000;*/
   margin: 2em 2.5em;
+  padding-top: 1em;
+}
+
+.content-portrait {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+  overflow:  hidden;
+  margin:  0 auto;
+}
+
+.content-portrait-text {
+  width: 50px;
+}
+
+.content-portrait-text.left h2 {
+  display: block;
+  position: relative;
+  right: -5px;
+  font-family:  'Playfair Display';
+  font-weight: 100;
+  letter-spacing: 4px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin: 0;
+}
+
+.content-portrait-text.right h2 {
+  display: block;
+  position: relative;
+  left: 10px;
+  font-family:  'Playfair Display';
+  font-weight: 100;
+  letter-spacing: 4px;
+  writing-mode: vertical-lr;
+  margin: 0;
+}
+
+.content-portrait-text a {
+  text-decoration: none;
+}
+
+.content-main-title {
+  height: 80px;
+}
+
+.content-main-title h1 {
+  font-size: 4em;
+  text-align:  center;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.content-portrait-photo {
+  height: 100%;
+  margin: 0;
+}
+
+.content-portrait-photo img {
+  height: 100%;
+  object-fit:  cover;
 }
 
 .content-about a {
@@ -207,9 +273,12 @@ p {
   max-height: 50px;
 }
 
-.content-portrait, .content-introduction {
-  width: 100%;
-  max-height: 100%;
+ .content-introduction {
+  display: block;
+  position: relative;
+  top: -170px;
+  left: 0;
+  right: 0px;
 }
 
 .content-introduction h1 {
@@ -219,28 +288,34 @@ p {
 .content-introduction-title {
   display: block;
   text-align: right;
-  font-size: 1em;
+  margin-right:  5em;
+  font-size: 0.5em;
   animation-name: textFalling;
   animation-duration: 3.4s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-direction: alternate;
+  opacity: 0;
 }
 
 .content-introduction-title.one {
   animation-name: textFallingRight;
   animation-duration: 3.4s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-direction: alternate;
-  transform:  rotate(-6deg);
+  transform:  rotate(-2.5deg);
 }
 
 .content-introduction-title.two {
   animation-name: textFallingLeft;
   animation-duration: 3.4s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-direction: alternate;
+  transform:  rotate(-0.5deg);
 }
 
+.content-introduction-title.three {
+  transform:  rotate(1deg);
+}
 
 @keyframes textFalling {
   0% {
@@ -252,8 +327,12 @@ p {
     opacity: 1;
   }
 
+  99% {
+    opacity: 1;
+  }
+
   100% {
-    transform: translateY(0px) rotate(0);
+    transform: translateY(0px) rotate(1deg);
   }
 }
 
@@ -267,8 +346,12 @@ p {
     opacity: 1;
   }
 
+  99% {
+    opacity: 1;
+  }
+
   100% {
-    transform: translate(0px) rotate(0) ;
+    transform: translate(0px) rotate(-0.5deg) ;
   }
 }
 
@@ -283,23 +366,16 @@ p {
     opacity: 1;
   }
 
+  99% {
+    opacity: 1;
+  }
+
   100% {
-    transform: translateY(0) rotate(-6deg);
+    transform: translateY(0) rotate(-2.5deg);
   }
 
 }
 
-.content-portrait-photo {
-  width: 100%;
-  height: 80vh;
-  text-align: left;
-}
-
-.content-portrait-photo img {
-  max-width: 100%;
-  height: 100%;
-  object-fit:  cover;
-}
 
 
 /* About
@@ -320,16 +396,26 @@ p {
 .content-about-animation, .content-about {
   display:  flex;
   flex-direction:  column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 80vh;
   max-height: 100%;
   width: 100vw;
   max-width: 100%;
 }
 
+.content-about .main-content {
+  display:  flex;
+  flex-direction:  column;
+  justify-content: center;
+  height: 100%;
+}
+
+.content-about .main-content p {
+  margin:  0 10%;
+}
+
 .content-about-animation .main-content,
 .content-about .main-content, .content-about.desktop .scroll {
-  display: block;
   width:  70%;
   margin: 0 auto;
   padding: 0;
@@ -540,6 +626,10 @@ p {
   text-align: left;
 }
 
+.content-contact-text p {
+  padding: 0 2rem;
+}
+
 .content-contact a {
   text-align:center;
   font-size: 1.3rem;
@@ -611,6 +701,10 @@ p {
     align-content: center;
     margin: 2em 0;
     height: 100%;
+  }
+
+  .content-portrait {
+    width: 75%;
   }
 
   .content-introduction {
@@ -776,7 +870,7 @@ p {
   }
 
   .content-contact h2 {
-    font-size: 10vw !important;
+    font-size: 9.5vw !important;
     padding: 0.75em;
   }
 
@@ -810,9 +904,16 @@ p {
 
   #main-navigation ul li:last-child{
     display: block;
-    color: red
   }
 
+  .content-main-title h1 {
+    font-size: 10vw;
+  }
+
+  #content-container {
+    position: relative;
+    top: 20px;
+  }
 }
 
 

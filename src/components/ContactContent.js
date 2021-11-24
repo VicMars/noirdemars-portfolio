@@ -18,8 +18,9 @@ function ContactContent() {
             <span>graphic</span>
           </span><br/>
           things<br/>
-          together
+          together*
           </h2>
+          <p>* Créons de belles choses ensemble </p>
         </div>
 
         <div>

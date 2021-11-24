@@ -7,7 +7,7 @@ function WebContent() {
   return(
 
     <div id="content-web">
-      <h2 className="content-title"> Design & développement Web </h2>
+      <h2 className="content-title"> Design & Développement Web </h2>
 
       <div className="content-web">
         <div className="content-web-inside">

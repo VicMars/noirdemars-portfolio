@@ -17,10 +17,6 @@ function Navbar() {
         </ul>
       </div>
 
-      <div id="secondary-navigation" className="right">
-        <p></p>
-      </div>
-
     </div>
     )
 }
