@@ -18,7 +18,7 @@ function App() {
         <title>Vicky André • Portfolio</title>
         <meta name="description" content="The portfolio of Vicky André: a multi-disciplinary designer playing with shapes.
            From Textile to Web Design."/>
-        <meta name="og:image" content="https://noir-de-mars.com/Vicky_Andre_portfolio.png"/>
+        <meta name="og:image" content="./Vicky_Andre_portfolio.png"/>
       </Helmet>
 
       <div id="header">
