@@ -19,7 +19,6 @@ function App() {
         <meta name="description" content="The portfolio of Vicky André: a multi-disciplinary designer playing with shapes.
           From Textile to Web Design."/>
         <meta name="image" proprety="og:image:secure_url" content="https://secure.noir-de-mars.com/assets/images/Vicky_Andre_portfolio.jpg"/>
-        <meta name="author" content="noir de mars by Vicky André" />
       </Helmet>
 
       <div id="header">
