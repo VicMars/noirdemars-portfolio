@@ -1,5 +1,4 @@
 import './App.css';
-import { Helmet } from 'react-helmet';
 
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
@@ -14,12 +13,6 @@ function App() {
   return (
 
     <div className="App">
-      <Helmet>
-        <title>Vicky André • Portfolio</title>
-        <meta name="description" content="The portfolio of Vicky André: a multi-disciplinary designer playing with shapes.
-          From Textile to Web Design."/>
-        <meta name="image" proprety="og:image:secure_url" content="https://secure.noir-de-mars.com/assets/images/Vicky_Andre_portfolio.jpg"/>
-      </Helmet>
 
       <div id="header">
         <Navbar/>
