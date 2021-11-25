@@ -1,6 +1,5 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
-import previewImage from 'Vicky_Andre_portfolio.png'
 
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
