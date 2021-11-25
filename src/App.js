@@ -1,5 +1,6 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
+import previewImage from 'Vicky_Andre_portfolio.png'
 
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
@@ -18,7 +19,7 @@ function App() {
         <title>Vicky André • Portfolio</title>
         <meta name="description" content="The portfolio of Vicky André: a multi-disciplinary designer playing with shapes.
            From Textile to Web Design."/>
-        <meta name="og:image" content="https://noir-de-mars.com/Vicky_Andre_portfolio.jpg"/>
+        <meta name="og:image" content="https://noir-de-mars.com/Vicky_Andre_portfolio.png"/>
       </Helmet>
 
       <div id="header">
