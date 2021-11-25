@@ -711,6 +711,10 @@ p {
     padding: 0 3em;
   }
 
+  .content-introduction-title {
+    display: none;
+  }
+
   .content-portrait, .content-portrait-photo {
     height: 100% !important;
   }
@@ -914,6 +918,11 @@ p {
     position: relative;
     top: 20px;
   }
+
+  .content-introduction h1 {
+    display: none;
+  }
+
 }
 
 
