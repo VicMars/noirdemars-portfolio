@@ -1,4 +1,5 @@
 import './App.css';
+import { Helmet } from 'react-helmet';
 
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
