@@ -1,4 +1,5 @@
 import './App.css';
+import OG_IMAGE from './Vicky_Andre_portfolio.jpg';
 
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
