@@ -34,7 +34,7 @@ function AboutContent() {
 
         <div className="main-content">
           <p>
-            Je suis une designer Française vivant entre Montréal et la Guadeloupe.<br/>
+            Je suis une designer Française vivant à Montréal, au Canada.<br/>
             Après avoir étudié puis enseigné les Arts Plastiques à Paris, j'ai
             ressenti le besoin de mettre mon âme créative au service d'applications
             plus concrètes. Fascinée par l'Art Contemporain et intriguée par le pouvoir
