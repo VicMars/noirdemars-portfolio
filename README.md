@@ -2,4 +2,3 @@
 <h3> The portfolio of Vicky André</h3>
 
 I am a Surface Designer, Web Designer and Front-end Developper.
-This website is my very first React project.
