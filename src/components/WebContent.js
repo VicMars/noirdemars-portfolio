@@ -31,7 +31,7 @@ function WebContent() {
             imgAlt="Vicky André - Cocq Sida"
             name="Cocq Sida"
             title="Project en cours: un site web informatif pour l'organisation canadienne de la lutte contre le Sida"
-            description="Design aéré pour faciliter la lecture et la recherche d'informations"
+            description="Design aéré pour faciliter la recherche d'informations. Style professionnel mais engageant et humain."
             tool1=" • Design et prototype Figma"
             tool2=" • Réorganisation de l'arborescence"
             tool3=" • Développement thème Wordpress"
