@@ -202,22 +202,19 @@ p {
   margin:  0 auto;
 }
 
-.content-portrait-text {
-  width: 50px;
-  max-height: 100%;
-}
 
 .content-portrait-text.left h2 {
   display: block;
   position: relative;
   height: 100%;
-  /*right: -5px;*/
+  max-height: 100%;
   font-family:  'Playfair Display';
   font-weight: 100;
   letter-spacing: 4px;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin: 0;
+  padding: 0 0.25;
   text-align: left;
   animation:  textShow 14s;
 }
@@ -225,7 +222,8 @@ p {
 .content-portrait-text.right h2 {
   display: block;
   position: relative;
-  /*left: 10px;*/
+  height: 100%;
+  max-height: 100%;
   font-family:  'Playfair Display';
   font-weight: 100;
   letter-spacing: 4px;
