@@ -202,7 +202,6 @@ p {
   margin:  0 auto;
 }
 
-
 .content-portrait-text.left h2 {
   display: block;
   position: relative;
@@ -229,6 +228,7 @@ p {
   letter-spacing: 4px;
   writing-mode: vertical-rl;
   margin: 0;
+  padding: 0 0.25;
   animation:  textShow 14s;
 }
 
