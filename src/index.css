@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 html {
@@ -64,7 +65,7 @@ p {
 @keyframes leftRight {
   to {
    opacity:0;
-   transform: translateX(50px)
+   transform: translateX(50px);
   }
 }
 
@@ -193,7 +194,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: calc(100vh - 100px);
-  /*background-color: #000;*/
   margin: 2em 2.5em;
   padding-top: 1em;
 }
@@ -210,11 +210,13 @@ p {
 
 .content-portrait-text {
   width: 50px;
+  max-height: 100%;
 }
 
 .content-portrait-text.left h2 {
   display: block;
   position: relative;
+  height: 100%;
   right: -5px;
   font-family:  'Playfair Display';
   font-weight: 100;
@@ -222,6 +224,8 @@ p {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin: 0;
+  text-align: left;
+  animation:  textShow 14s;
 }
 
 .content-portrait-text.right h2 {
@@ -233,6 +237,16 @@ p {
   letter-spacing: 4px;
   writing-mode: vertical-lr;
   margin: 0;
+  animation:  textShow 14s;
+}
+
+@keyframes textShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .content-portrait-text a {
@@ -240,15 +254,31 @@ p {
 }
 
 .content-main-title {
+  display: block;
   height: 80px;
+  width: 100%;
 }
 
 .content-main-title h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   text-align:  center;
   letter-spacing: 4px;
   margin: 0;
+  animation-name:  maintitleAppear;
+  animation-duration: 6s;
 }
+
+@keyframes maintitleAppear {
+  0% {
+    opacity: 0;
+    transform:   scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform:  scale(1);
+  }
+}
+
 
 .content-portrait-photo {
   height: 100%;
@@ -258,124 +288,20 @@ p {
 .content-portrait-photo img {
   height: 100%;
   object-fit:  cover;
-}
-
-.content-about a {
-  text-decoration: none;
-  font-weight:  bold;
-}
-
-.content-about a:hover {
-  font-style: italic;
-}
-
-.content-about img {
-  max-height: 50px;
-}
-
- .content-introduction {
-  display: block;
-  position: relative;
-  top: -170px;
-  left: 0;
-  right: 0px;
-}
-
-.content-introduction h1 {
-  padding:  0 5%;
-}
-
-.content-introduction-title {
-  display: block;
-  text-align: right;
-  margin-right:  5em;
-  font-size: 0.5em;
-  animation-name: textFalling;
-  animation-duration: 3.4s;
+  animation-name:  imageZoom;
+  animation-duration:  7s;
   animation-iteration-count: 1;
   animation-direction: alternate;
-  opacity: 0;
 }
 
-.content-introduction-title.one {
-  animation-name: textFallingRight;
-  animation-duration: 3.4s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  transform:  rotate(-2.5deg);
-}
-
-.content-introduction-title.two {
-  animation-name: textFallingLeft;
-  animation-duration: 3.4s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  transform:  rotate(-0.5deg);
-}
-
-.content-introduction-title.three {
-  transform:  rotate(1deg);
-}
-
-@keyframes textFalling {
+@keyframes imageZoom {
   0% {
-    transform: translateY(-230px) rotate(-60deg);
-    opacity: 0;
+    transform:  translateY(100%) scale(0.3);
   }
-
-  50% {
-    opacity: 1;
-  }
-
-  99% {
-    opacity: 1;
-  }
-
   100% {
-    transform: translateY(0px) rotate(1deg);
+    transform: translateY(0) scale(1);
   }
 }
-
-@keyframes textFallingLeft {
-  0% {
-    transform: translate(-250px) rotate(8deg) ;
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  99% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translate(0px) rotate(-0.5deg) ;
-  }
-}
-
-
-@keyframes textFallingRight {
-  0% {
-    transform: translateY(-150px) rotate(35deg);
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  99% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(0) rotate(-2.5deg);
-  }
-
-}
-
 
 
 /* About
@@ -408,6 +334,19 @@ p {
   flex-direction:  column;
   justify-content: center;
   height: 100%;
+}
+
+.content-about a {
+  text-decoration: none;
+  font-weight:  bold;
+}
+
+.content-about a:hover {
+  font-style: italic;
+}
+
+.content-about img {
+  max-height: 50px;
 }
 
 .content-about .main-content p {
