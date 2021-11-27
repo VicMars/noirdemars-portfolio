@@ -638,7 +638,7 @@ p {
 
   .content-portrait {
     width: 75%;
-    height: 60vh;
+    height: 50vh;
   }
 
   .content-portrait-photo img {
@@ -652,7 +652,6 @@ p {
   .content-introduction-title {
     display: none;
   }
-
 
   #content-about {
     display: block !important;
