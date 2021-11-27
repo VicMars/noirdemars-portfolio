@@ -638,6 +638,11 @@ p {
 
   .content-portrait {
     width: 75%;
+    height: 60vh;
+  }
+
+  .content-portrait-photo img {
+    width: auto;
   }
 
   .content-introduction {
@@ -648,18 +653,6 @@ p {
     display: none;
   }
 
-  .content-portrait, .content-portrait-photo {
-    height: 100% !important;
-  }
-
-  .content-portrait-photo {
-    text-align: center !important;
-  }
-
-  .content-portrait-photo img {
-    width: 100%;
-    max-width:  70vw !important;
-  }
 
   #content-about {
     display: block !important;
