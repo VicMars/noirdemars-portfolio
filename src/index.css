@@ -624,30 +624,6 @@ p {
     height:  100%;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 0 0 2em 0;
-    height: 100%;
-  }
-
-  .content-portrait {
-    width: auto;
-    height: 100vh;
-  }
-
-  .content-portrait-photo img {
-    width: auto;
-  }
-
-  .content-introduction {
-    padding: 0 3em;
-  }
-
-  .content-introduction-title {
-    display: none;
-  }
 
   #content-about {
     display: block !important;
