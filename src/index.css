@@ -624,6 +624,10 @@ p {
     height:  100%;
   }
 
+  .content {
+    height: 100%;
+  }
+
   #content-about {
     display: block !important;
     width: 100vw;
