@@ -7,3 +7,10 @@
   background-size: cover;
 }
 
+
+@media (max-width: 60em) {
+  .App {
+    width: 100vw;
+    height: auto;
+  }
+}
