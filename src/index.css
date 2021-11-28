@@ -865,7 +865,8 @@ p {
   }
 
   .content-portrait-photo img {
-    width: 90%;
+    width: auto;
+    max-height: 100%
   }
 
 }
