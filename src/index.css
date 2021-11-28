@@ -831,7 +831,12 @@ p {
     height: auto;
   }
 
-  .content-portrait, .content-portrait-photo img {
+  .content-portrait {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content-portrait-photo img {
     width: 100%;
     height: auto;
   }
