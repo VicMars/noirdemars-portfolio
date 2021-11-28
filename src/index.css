@@ -859,14 +859,14 @@ p {
     margin:  3em 0;
   }
 
-  .content-portrait {
+  /*.content-portrait {
     width: 100%;
   }
 
   .content-portrait-photo img {
     width: auto;
     max-height: 100%
-  }
+  }*/
 
 }
 
