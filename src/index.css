@@ -636,7 +636,7 @@ p {
 
   .content-portrait {
     width: auto;
-    height: 50vh;
+    height: 60vh;
   }
 
   .content-portrait-photo img {
@@ -849,6 +849,15 @@ p {
 
   .content-introduction h1 {
     display: none;
+  }
+
+  .content-portrait {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .content-portrait-photo img {
+    width: auto;
   }
 
 }
