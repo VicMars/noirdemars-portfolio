@@ -835,6 +835,14 @@ p {
     padding-top: 1em;
   }
 
+  .content-about-animation .main-content {
+    width: 80%;
+  }
+
+  .content-about .main-content {
+    width: 100%;
+  }
+
   .content-portrait-text {
     width: 50px;
   }
