@@ -848,6 +848,7 @@ p {
 
   .content-main-title h1 {
     font-size: 10vw;
+    mix-blend-mode: difference;
   }
 
   #content-container {
@@ -860,11 +861,11 @@ p {
   }
 
   .content-portrait {
-    width: 100%;
+    max-width: 100%;
   }
 
   .content-portrait-photo img {
-    width: auto;
+    width: 90%;
   }
 
 }
