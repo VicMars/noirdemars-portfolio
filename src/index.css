@@ -202,6 +202,10 @@ p {
   margin:  0 auto;
 }
 
+.content-portrait-text {
+  width: auto;
+}
+
 .content-portrait-text.left h2 {
   display: block;
   position: relative;
@@ -861,7 +865,7 @@ p {
   }
 
   .content-portrait {
-    max-width: 100%;
+    width: 100%;
   }
 
   .content-portrait-photo img {
