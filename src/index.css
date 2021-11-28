@@ -827,11 +827,16 @@ p {
     padding-top: 1em;
   }
 
+  .content-portrait-text {
+    width: 50px;
+  }
+
   .content-portrait-text.left h2, .content-portrait-text.right h2 {
     height: auto;
   }
 
   .content-portrait {
+    width: auto;
     max-width: 100%;
     height: auto;
   }
