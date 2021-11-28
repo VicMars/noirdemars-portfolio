@@ -9,7 +9,7 @@ function MainContent() {
 
         <div className="content-portrait">
           <div className="content-portrait-text left">
-             <h2><a href="#container-textile">designer</a></h2>
+             <h2>designer</h2>
           </div>
           <div className="content-portrait-photo">
             <img src="./assets/images/Vicky_Andre.jpg" alt="Vicky André"/>

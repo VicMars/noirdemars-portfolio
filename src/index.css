@@ -197,7 +197,7 @@ p {
   justify-content: center;
   align-content: center;
   width: 50%;
-  height: 100%;
+  height: 85%;
   overflow:  hidden;
   margin:  0 auto;
 }
@@ -213,7 +213,7 @@ p {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin: 0;
-  padding: 0 0.25;
+  padding: 0 0.25em;
   text-align: left;
   animation:  textShow 14s;
 }
@@ -228,7 +228,7 @@ p {
   letter-spacing: 4px;
   writing-mode: vertical-rl;
   margin: 0;
-  padding: 0 0.25;
+  padding: 0 0.25em;
   animation:  textShow 14s;
 }
 
