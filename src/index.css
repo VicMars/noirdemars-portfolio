@@ -799,6 +799,7 @@ p {
     height: auto;
     text-align:left;
     background-color: #000;
+    padding: 0 1em;
   }
 
   #secondary-navigation.right {
@@ -818,6 +819,10 @@ p {
   #main-navigation ul li:last-child{
     display: block;
   }
+
+  #main-navigation ul li a:hover {
+  padding-bottom: 0.3em;
+}
 
   #main-content {
     padding-top: 70px;
