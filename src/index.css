@@ -816,9 +816,10 @@ p {
   }
 
   .content {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    margin: 1em;
+    margin: 1em 0;
     padding-top: 1em;
   }
 
