@@ -194,14 +194,14 @@ p {
   grid-template-rows: 100%;
   justify-content: space-around;
   align-content: center;
-  max-width: 500px;
+  max-width: 600px;
   height: 85%;
   margin:  0 auto;
   overflow:  hidden;
 }
 
 .content-portrait-text {
-  width: auto;
+  width: 50px;
 }
 
 .content-portrait-text.left h2 {
@@ -628,10 +628,6 @@ p {
     height: 100%;
   }
 
-  .content-portrait-text {
-    width: 50px;
-  }
-
   .content-portrait-photo img {
     width: 100%;
   }
@@ -841,10 +837,6 @@ p {
 
   .content-about .main-content {
     width: 100%;
-  }
-
-  .content-portrait-text {
-    width: 50px;
   }
 
   .content-portrait-text.left h2, .content-portrait-text.right h2 {
