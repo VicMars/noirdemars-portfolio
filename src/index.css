@@ -194,7 +194,7 @@ p {
   grid-template-rows: 100%;
   justify-content: space-around;
   align-content: center;
-  width: 500px;
+  max-width: 500px;
   height: 85%;
   margin:  0 auto;
   overflow:  hidden;
@@ -624,7 +624,6 @@ p {
     height:  100%;
   }
 
-
   #content-about {
     display: block !important;
     width: 100vw;
@@ -835,8 +834,9 @@ p {
     margin:  3em 0;
   }
 
-  /*.content-portrait {
-    width: 100%;
+  .content-portrait {
+    height: 100vh;
+    max-width: 100%;
   }
 
   .content-portrait-photo img {
