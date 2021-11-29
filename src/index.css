@@ -628,8 +628,13 @@ p {
     height: 100%;
   }
 
+  .content-portrait-text.left h2, .content-portrait-text.right h2 {
+    height: auto;
+  }
+
   .content-portrait-photo img {
     width: 100%;
+    height: auto;
   }
 
   #content-about {
