@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-@media (max-width: 60em) {
+@media (max-width: 64em) {
   .App {
     background-position: left;
     background-size: auto 100vh;
