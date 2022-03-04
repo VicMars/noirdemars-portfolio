@@ -419,8 +419,7 @@ p {
   grid-template-columns:  100% 100% 100% 100% 100%;*/
   display: flex;
   justify-content: space-between;
-  align-content:  center;
-  align-items:  center;
+  align-content:  flex-start;
   overflow-x:  scroll;
   overflow-y:  hidden;
 }
