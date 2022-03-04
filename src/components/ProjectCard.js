@@ -12,9 +12,10 @@ function ProjectCard(props) {
         </div>
 
         <div className="project-card-content">
-          <h3> {props.name} </h3>
-          <p> {props.title} </p>
-          <p> {props.description} </p>
+          <h4> {props.name} </h4>
+          <p><span>CLIENT:</span> {props.client} </p>
+          <p><span>MISSION:</span> {props.title} </p>
+          <p><span> OBJECTIFS:</span> {props.description} </p>
           <p> {props.tool1}<br/>{props.tool2}<br/>{props.tool3}<br/>{props.tool4} </p>
           <p> <a href={props.projectLink} target="_blank" rel="noreferrer" className="project-card-link">{props.projectLinkTitle}</a> </p>
         </div>
