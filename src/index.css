@@ -410,7 +410,7 @@ p {
 }
 
 #content-web .content-title {
-  height: 60px;
+  height: max-content;
   padding: 1em 0 0 2em;
 }
 
