@@ -13,6 +13,22 @@ function WebContent() {
         <div className="content-web-inside">
 
           <ProjectCard
+            imgUrl="./assets/images/Vicky_Andre_Cynthia_Immo.gif"
+            imgAlt="Vicky André - Instagram Cynthia Immo"
+            name="Design d'un Media Kit pour Instagram"
+            client="Cynthia S. - Agent immobillière"
+            title="Branding et proposition de contenu pour Instagram autour de la couleur bleue."
+            description="Création d'une identité digitale professionnelle,
+            pour proposer un contenu différentiel et engageant. Créer un sentiment de proximité et d'accessiblité"
+            tool1=" • Design graphique et prototype"
+            tool2=" • Adobe Illustrator & Photoshop"
+            tool3=" • Transfert des maquettes sur 'Canva' pour faciliter l'utilisation par le client."
+            tool4=""
+            projectLink=""
+            projectLinkTitle=""
+          />
+
+          <ProjectCard
             imgUrl="./assets/images/Vicky_Andre_LaboratoireTextile.png"
             imgAlt="Vicky André - Laboratoire Textile"
             name="Design et développement Web"
@@ -26,22 +42,6 @@ function WebContent() {
             tool4=" • css, html, php, javascript"
             projectLink="https://laboratoiretextile.ca"
             projectLinkTitle="laboratoiretextile.ca"
-          />
-
-          <ProjectCard
-            imgUrl="./assets/images/Vicky_Andre_Cynthia_Immo.gif"
-            imgAlt="Vicky André - Instagram Cynthia Immo"
-            name="Design d'un Media Kit pour Instagram"
-            client="Cynthia - Agent immobillière"
-            title="Branding et proposition de contenu pour Instagram autour de la couleur bleue."
-            description="Création d'une identité digitale professionnelle,
-            pour proposer un contenu différentiel et engageant. Créer un sentiment de proximité et d'accessiblité"
-            tool1=" • Design graphique et prototype"
-            tool2=" • Adobe Illustrator & Photoshop"
-            tool3=" • Transfert des maquettes sur 'Canva' pour faciliter l'utilisation par le client."
-            tool4=""
-            projectLink=""
-            projectLinkTitle=""
           />
 
           <ProjectCard
